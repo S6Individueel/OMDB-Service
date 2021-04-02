@@ -13,14 +13,16 @@ namespace OMDB_Service
         {
             return new MovieTopAiringDTO
             {
-/*                Id = anime.mal_id,
-                Name = anime.title,
-                ImageUrl = anime.image_url,
-                Rank = anime.rank,
-                Score = anime.score,
-                StartDate = anime.start_date,
-                EndDate = anime.end_date,
-                MaxEpisodes = anime.episodes.Equals(null) ? "Unknown" : anime.episodes.Value.ToString()*/
+                adult = movie.adult,
+                backdrop_path = movie.backdrop_path,
+                genre_ids = movie.genre_ids,
+                id = movie.id,
+                overview = movie.overview,
+                popularity = movie.popularity,
+                poster_path = movie.poster_path,
+                release_date = movie.release_date,
+                title = movie.title,
+                vote_average = movie.vote_average
             };
         }
     }

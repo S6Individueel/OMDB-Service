@@ -23,7 +23,7 @@ namespace OMDB_Service.Repositories
             HttpResponseMessage response = await _httpclient.GetAsync(uri);
             var content = await response.Content.ReadAsStringAsync();
 
-            IList<JToken> results = JObject.Parse(content)["top"].Children().ToList(); //Parses content, gets the "top" list and converts to list.
+            IList<JToken> results = JObject.Parse(content)["results"].Children().ToList(); //Parses content, gets the "top" list and converts to list.
 
             IList<TopMovie> topMovies = new List<TopMovie>();
             foreach (JToken movie in results)
