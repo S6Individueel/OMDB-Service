@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eftf8xDTnpYOrYOQ1gViRYfxfRjpYJeEjV/wBgbRo7fUppurX+scGKuDAQpT8RmnkYanWVDXXP01eKPptHvPsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ander\\Documents\\SCHOOL\\SEMESTER 6\\INDIVIDUEEL\\PROJECTS\\OMDB-Service\\OMDB-Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ander\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\ander\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
