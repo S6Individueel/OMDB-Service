@@ -19,7 +19,7 @@ namespace OMDB_Service.Repositories
 
         public async Task<IEnumerable<TopMovie>> GetTopTenAsync()
         {
-            string uri = _httpclient.BaseAddress + "/movie/now_playing?api_key=3caffe903f7c34234eb189d6db9544fc&language=en-US&page=1"; // TODO: Getkey from encrypted environment variable sometime later
+            string uri = _httpclient.BaseAddress + "/trending/movie/week?api_key=3caffe903f7c34234eb189d6db9544fc"; // TODO: Getkey from encrypted environment variable sometime later
             HttpResponseMessage response = await _httpclient.GetAsync(uri);
             var content = await response.Content.ReadAsStringAsync();
 

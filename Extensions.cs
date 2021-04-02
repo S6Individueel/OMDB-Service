@@ -13,16 +13,18 @@ namespace OMDB_Service
         {
             return new MovieTopAiringDTO
             {
+                overview = movie.overview,
+                release_date = movie.release_date,
                 adult = movie.adult,
                 backdrop_path = movie.backdrop_path,
+                vote_count = movie.vote_count,
                 genre_ids = movie.genre_ids,
-                id = movie.id,
-                overview = movie.overview,
-                popularity = movie.popularity,
+                vote_average = movie.vote_average,
+                original_language = movie.original_language,
                 poster_path = movie.poster_path,
-                release_date = movie.release_date,
                 title = movie.title,
-                vote_average = movie.vote_average
+                id = movie.id,
+                media_type = movie.media_type,
             };
         }
     }
