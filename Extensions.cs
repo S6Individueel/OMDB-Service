@@ -27,5 +27,17 @@ namespace OMDB_Service
                 media_type = movie.media_type,
             };
         }
+        public static ShowDTO AsShowDTO(this TopMovie show)
+        {
+            return new ShowDTO
+            {
+                Id = show.id,
+                Title = show.title,
+                Media_type = show.media_type,
+                Description = show.overview,
+                Release_date = show.release_date,
+                Image_url = show.poster_path
+            };
+        }
     }
 }

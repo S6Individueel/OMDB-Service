@@ -20,10 +20,10 @@ namespace OMDB_Service.Controllers
         }
 
         [HttpGet("popular")]
-        public async Task<IEnumerable<MovieTopAiringDTO>> GetTopTenAsync()
+        public async Task<IEnumerable<ShowDTO>> GetTopTenAsync()
         {
             var movies = (await _movieRepository.GetTopTenAsync())
-                            .Select(movie => movie.AsTopDTO());
+                            .Select(movie => movie.AsShowDTO());
             return movies;
         }
     }

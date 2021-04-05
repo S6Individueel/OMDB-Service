@@ -33,6 +33,11 @@ namespace OMDB_Service
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
             });
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                builder.WithOrigins("https://localhost:5001"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +51,7 @@ namespace OMDB_Service
 
             app.UseHttpsRedirection();
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
