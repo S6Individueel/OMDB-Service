@@ -36,7 +36,7 @@ namespace OMDB_Service
                 Media_type = show.media_type,
                 Description = show.overview,
                 Release_date = show.release_date,
-                Image_url = show.poster_path
+                Image_url = "https://image.tmdb.org/t/p/w500/"+show.poster_path
             };
         }
     }

@@ -1,3 +1,5 @@
+using OMDB_Service.Rabbit;
+using OMDB_Service.Rabbit.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +31,12 @@ namespace OMDB_Service
             services.AddHttpClient<IMovieRepository, MovieRepository>(client =>
                 client.BaseAddress = new Uri(Configuration["BaseUrl"])
                 );
+            services.AddHostedService<ConsumeScopedServiceHostedService>();
+            services.AddScoped<IScopedProcessingService, ScopedProcessingService>();
+
+            services.AddHttpClient<ScopedProcessingService>(client =>
+                client.BaseAddress = new Uri(Configuration["BaseUrl"])
+            );
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
