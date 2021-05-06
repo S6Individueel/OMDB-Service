@@ -13,6 +13,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using OMDB_Service.Repositories.Interfaces;
 
 namespace OMDB_Service.Rabbit
 {
@@ -25,13 +26,14 @@ namespace OMDB_Service.Rabbit
 /*        private readonly ConnectionFactory connectionFactory;
         private readonly IConnection _connection;*/
         private readonly HttpClient _httpclient;
+        private IMovieRepository _movieRepository;
 
-        public ScopedProcessingService(ILogger<ScopedProcessingService> logger, HttpClient httpClient)
+        public ScopedProcessingService(ILogger<ScopedProcessingService> logger, HttpClient httpClient, IMovieRepository movieRepository)
         {
 /*            connectionFactory = new ConnectionFactory() { HostName = "localhost" };
             _connection = connectionFactory.CreateConnection();*/
             _httpclient = httpClient;
-
+            _movieRepository = movieRepository;
             _logger = logger;
         }
 
@@ -51,20 +53,8 @@ namespace OMDB_Service.Rabbit
                     channel.ExchangeDeclare(exchange: "topic_exchange",                     //EXCHANGE creation
                                             type: "topic");
 
-                    string uri = "https://api.themoviedb.org/3" + "/trending/movie/week?api_key=3caffe903f7c34234eb189d6db9544fc";
-                    
-                    HttpResponseMessage response = await _httpclient.GetAsync(uri);
-                    var content = await response.Content.ReadAsStringAsync();
-
-                    IList<JToken> results = JObject.Parse(content)["results"].Children().ToList(); //Parses content, gets the "top" list and converts to list.
-
-                    IList<TopMovie> topMovies = new List<TopMovie>();
-                    foreach (JToken movie in results)
-                    {
-                        TopMovie topAnime = movie.ToObject<TopMovie>();
-                        topMovies.Add(topAnime);
-                    }
-                    var showList = topMovies.Select(movie => movie.AsShowDTO());
+                    var showList = (await _movieRepository.GetTopTenAsync())            //GetShowList
+                            .Select(movie => movie.AsShowDTO());
 
                     var json = JsonConvert.SerializeObject(showList);                    //MESSAGE creation
                     var body = Encoding.UTF8.GetBytes(json);
