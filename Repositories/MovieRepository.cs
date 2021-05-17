@@ -26,11 +26,17 @@ namespace OMDB_Service.Repositories
             IList<JToken> results = JObject.Parse(content)["results"].Children().ToList(); //Parses content, gets the "top" list and converts to list.
 
             IList<TopMovie> topMovies = new List<TopMovie>();
-            foreach (JToken movie in results)
+
+            for (int movieCount = 0; movieCount < 10; movieCount++)
+            {
+                TopMovie topAnime = results[movieCount].ToObject<TopMovie>();
+                topMovies.Add(topAnime);
+            }
+/*            foreach (JToken movie in results)
             {
                 TopMovie topAnime = movie.ToObject<TopMovie>();
                 topMovies.Add(topAnime);
-            }
+            }*/
 
             return topMovies;
         }

@@ -8,14 +8,12 @@ C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\ref\OMDB-Service.dll
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\OMDB-Service.pdb
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csprojAssemblyReference.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.AssemblyInfoInputs.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.AssemblyInfo.cs
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csproj.CoreCompileInputs.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\staticwebassets\OMDB-Service.StaticWebAssets.Manifest.cache
-C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\staticwebassets\OMDB-Service.StaticWebAssets.xml
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\scopedcss\bundle\OMDB-Service.styles.css
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.RazorTargetAssemblyInfo.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csproj.CopyComplete
@@ -23,3 +21,6 @@ C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\ref\OMDB-Service.dll
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.pdb
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.genruntimeconfig.cache
+C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csproj.AssemblyReference.cache
+C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\OMDB-Service.StaticWebAssets.xml
+C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\RabbitMQ.Client.dll
