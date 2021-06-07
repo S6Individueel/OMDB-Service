@@ -23,7 +23,7 @@ namespace OMDB_Service.Repositories
             HttpResponseMessage response = await _httpclient.GetAsync(uri);
             var content = await response.Content.ReadAsStringAsync();
 
-            IList<JToken> results = JObject.Parse(content)["results"].Children().ToList(); //Parses content, gets the "top" list and converts to list.
+            IList<JToken> results = JObject.Parse(content)["results"].Children().ToList(); 
 
             IList<TopMovie> topMovies = new List<TopMovie>();
 
@@ -32,11 +32,6 @@ namespace OMDB_Service.Repositories
                 TopMovie topAnime = results[movieCount].ToObject<TopMovie>();
                 topMovies.Add(topAnime);
             }
-/*            foreach (JToken movie in results)
-            {
-                TopMovie topAnime = movie.ToObject<TopMovie>();
-                topMovies.Add(topAnime);
-            }*/
 
             return topMovies;
         }
