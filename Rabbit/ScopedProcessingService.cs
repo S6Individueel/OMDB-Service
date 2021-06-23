@@ -42,11 +42,12 @@ namespace OMDB_Service.Rabbit
             while (!stoppingToken.IsCancellationRequested)
             {
                 executionCount++;
-
+                Console.WriteLine("Sleeping for Rabbit and ShowService...");
+                await Task.Delay(TimeSpan.FromSeconds(30));
                 _logger.LogInformation(
                     "Scoped Processing Service is working. Count: {Count}", executionCount);
 
-                var factory = new ConnectionFactory() { HostName = "localhost" };
+                var factory = new ConnectionFactory() { HostName = "rabbitmq" };
                 using (var connection = factory.CreateConnection())
                 using (var channel = connection.CreateModel())
                 {
