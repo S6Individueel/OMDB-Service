@@ -22,4 +22,5 @@ C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.pdb
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.genruntimeconfig.cache
 C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\bin\Debug\net5.0\RabbitMQ.Client.dll
-C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csproj.AssemblyReference.cache
+C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\OMDB-Service.csprojAssemblyReference.cache
+C:\Users\ander\Documents\SCHOOL\SEMESTER 6\INDIVIDUEEL\PROJECTS\OMDB-Service\obj\Debug\net5.0\staticwebassets\OMDB-Service.StaticWebAssets.xml
